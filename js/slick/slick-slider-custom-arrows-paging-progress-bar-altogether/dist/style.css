@@ -1,0 +1,100 @@
+/* ========= web font ========= */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  font-family: "Shrikhand", cursive;
+}
+
+/* ========= // web font ========= */
+.container {
+  position: relative;
+}
+
+.slick--visual__paging {
+  position: absolute;
+  top: 10vh;
+  left: 8%;
+  letter-spacing: 2px;
+  font-size: 170%;
+  z-index: 2;
+}
+.slick--visual__paging .slick-dots li {
+  display: none;
+  justify-content: space-between;
+  color: #555;
+}
+.slick--visual__paging .slick-dots li.slick-active {
+  display: flex;
+}
+.slick--visual__paging .slick-dots li.slick-active span:first-of-type {
+  color: #FC919B;
+}
+
+.slick--visual {
+  height: 100vh;
+}
+.slick--visual .slick-list,
+.slick--visual .slick-track {
+  height: 100%;
+}
+
+.slick-slide {
+  position: relative;
+  height: 100%;
+}
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+}
+.slick-slide .visual__txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FC919B;
+}
+.slick-slide .visual__txt .visual__txt__tit {
+  margin-bottom: 2rem;
+  font-size: 7rem;
+}
+.slick-slide .visual__txt .visual__txt__desc {
+  font-size: 2rem;
+}
+
+.slick--visual__etc {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  display: flex;
+  width: 84%;
+  flex-direction: column;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  z-index: 2;
+}
+.slick--visual__etc .visual__arrows {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.slick--visual__etc .visual__arrows .visual-prev,
+.slick--visual__etc .visual__arrows .visual-next {
+  border: 0;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.slick--visual__etc .visual__arrows .visual-prev:hover,
+.slick--visual__etc .visual__arrows .visual-next:hover {
+  transform: scale(1.5);
+}
+.slick--visual__etc .products__progress {
+  height: 4px;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #555, #555);
+  z-index: 2;
+}

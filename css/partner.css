@@ -1,0 +1,38 @@
+#partner {
+  width: 100%;
+  background-color: #ccc;
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0)94.9%, #434343 95%, #434343 100%), url(../img/fesival.jpg);
+  animation-name: colorslide;
+  animation-duration: 1s;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes colorslide{
+  from{
+    background-position-left:0%;
+  }
+  to{
+    background-position-left:100% center;
+  }
+}
+
+#partner .wrap {
+  flex-direction: column;
+  gap: 40px;
+}
+#partner .wrap h2 {
+}
+#partner .wrap h3 {
+  color: white;
+}
+#partner .wrap h3::before{
+  
+}
+
+#partner .wrap p {
+
+}
+#partner .wrap a {
+  margin-top: 20px;
+}
